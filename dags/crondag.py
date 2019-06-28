@@ -34,8 +34,8 @@ args = {
 dag = DAG(
     dag_id='example_bash_operator',
     default_args=args,
-    schedule_interval='*/5 0 * * *',
-    dagrun_timeout=timedelta(seconds=4),
+    schedule_interval='* 0 * * *',
+    dagrun_timeout=timedelta(minutes=1),
 )
 
 run_this_last = DummyOperator(
