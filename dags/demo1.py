@@ -6,7 +6,7 @@ import os
 
 args = {
     'owner': 'airflow',
-    "start_date": datetime(2018, 10, 4),
+    'start_date': datetime.utcnow(),
 }
 
 dag = DAG(
